@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pocket Option Africa — Premier Online Trading Platform</title>
+  <meta name="description" content="Trade Forex, Cryptocurrencies, and Commodities with Pocket Option Africa. High yields, instant execution, and free $10,000 demo account.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            heading: ['"Space Grotesk"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              dark: '#030917',
+              navy: '#0a152d',
+              card: 'rgba(15, 27, 54, 0.75)',
+              lime: '#c6f81c',
+              emerald: '#18e0a8',
+              cyan: '#19d3ff',
+              accent: '#3b82f6',
+              border: 'rgba(59, 130, 246, 0.2)',
+            }
+          },
+          boxShadow: {
+            'glow-lime': '0 0 30px rgba(198, 248, 28, 0.35)',
+            'glow-cyan': '0 0 35px rgba(25, 211, 255, 0.25)',
+            'phone': '0 25px 60px -15px rgba(0, 0, 0, 0.9), 0 0 40px rgba(25, 211, 255, 0.15)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans antialiased selection:bg-brand-cyan selection:text-brand-dark min-h-screen flex flex-col">
+
+  <!-- TOP TICKER BAR -->
+  <div class="bg-brand-navy/90 border-b border-brand-border/40 py-2 px-4 text-xs font-semibold overflow-hidden">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-2 text-brand-emerald">
+        <span class="inline-block w-2 h-2 rounded-full bg-brand-emerald animate-ping"></span>
+        <span>Pocket Option Africa Portal Active</span>
+      </div>
+      <div class="hidden md:flex items-center space-x-6 text-gray-300">
+        <span><strong class="text-white">EUR/USD:</strong> 1.0845 <span class="text-brand-emerald">+0.42%</span></span>
+        <span><strong class="text-white">BTC/USD:</strong> $67,420 <span class="text-brand-emerald">+2.85%</span></span>
+        <span><strong class="text-white">ETH/USD:</strong> $3,510 <span class="text-brand-emerald">+1.95%</span></span>
+        <span><strong class="text-white">Gold:</strong> $2,385 <span class="text-brand-emerald">+0.15%</span></span>
+      </div>
+      <div class="text-brand-lime font-bold">
+        <span>🚀 92% Max Profit Yield</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="sticky top-0 z-50 bg-brand-dark/85 backdrop-blur-md border-b border-brand-border/30 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center space-x-3 group" aria-label="Pocket Option Africa Home">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-accent via-brand-cyan to-brand-lime p-0.5 shadow-md transition-transform group-hover:scale-105">
+          <div class="w-full h-full bg-brand-dark rounded-[10px] flex items-center justify-center">
+            <svg class="w-6 h-6 text-brand-cyan" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M3 13.5L9 7.5L13.5 12L21 4.5M21 4.5H15M21 4.5V10.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-heading font-extrabold text-xl tracking-tight text-white flex items-center gap-1.5">
+            Pocket<span class="text-brand-cyan">Option</span>
+          </span>
+          <span class="text-[10px] font-semibold tracking-widest text-brand-lime uppercase -mt-1">Africa</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-gray-300">
+        <a href="#overview" class="hover:text-brand-cyan transition-colors">Overview</a>
+        <a href="#assets" class="hover:text-brand-cyan transition-colors">Assets & Profit</a>
+        <a href="#live-demo" class="hover:text-brand-cyan transition-colors">Live Platform</a>
+        <a href="#steps" class="hover:text-brand-cyan transition-colors">How to Start</a>
+      </nav>
+
+      <!-- Header CTA -->
+      <div class="flex items-center space-x-4">
+        <a data-ref data-track="header-demo" href="https://pocket-friends.co/r/xte1qtcfbf" class="hidden sm:inline-flex px-4 py-2.5 rounded-xl border border-brand-border text-sm font-semibold text-white hover:bg-brand-navy transition-colors">
+          Demo Account
+        </a>
+        <a data-ref data-track="header-cta" href="https://pocket-friends.co/r/xte1qtcfbf" class="btn-gradient px-5 py-2.5 rounded-xl text-sm font-bold shadow-glow-lime">
+          Open Account
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex-grow">
+
+    <!-- HERO SECTION -->
+    <section id="overview" class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-accent/15 rounded-full blur-[140px] pointer-events-none"></div>
+      <div class="absolute top-1/3 right-10 w-[400px] h-[400px] bg-brand-cyan/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Left Hero Text Column -->
+          <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+            
+            <!-- Badges Row including English AI Bot Button -->
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3">
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-brand-border text-xs sm:text-sm font-semibold text-brand-cyan">
+                <span class="flex h-2 w-2 rounded-full bg-brand-emerald animate-pulse"></span>
+                Official Partner Portal for African Traders
+              </div>
+              <a href="https://t.me/NagibatorPocketOption" target="_blank" class="ai-bot-btn inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs sm:text-sm shadow-glow-cyan">
+                🤖 AI Bot for 3s
+              </a>
+            </div>
+
+            <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15]">
+              Trading Platform for <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan via-brand-emerald to-brand-lime">Financial Markets</span> in Africa
+            </h1>
+
+            <p class="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+              Trade Currency Pairs, Cryptocurrencies, and Commodities with high payout rates. Experience fast executions, instant deposits, and a free <strong class="text-white">$10,000 demo account</strong>.
+            </p>
+
+            <!-- Key Feature Badges -->
+            <div class="grid grid-cols-3 gap-3 max-w-md mx-auto lg:mx-0 pt-2">
+              <div class="p-3 rounded-2xl glass-card text-center">
+                <div class="text-brand-lime font-extrabold text-xl sm:text-2xl font-heading">Up to 92%</div>
+                <div class="text-xs text-gray-400 font-medium">Profit Payout</div>
+              </div>
+              <div class="p-3 rounded-2xl glass-card text-center">
+                <div class="text-brand-cyan font-extrabold text-xl sm:text-2xl font-heading">$1</div>
+                <div class="text-xs text-gray-400 font-medium">Minimum Trade</div>
+              </div>
+              <div class="p-3 rounded-2xl glass-card text-center">
+                <div class="text-brand-emerald font-extrabold text-xl sm:text-2xl font-heading">Fast</div>
+                <div class="text-xs text-gray-400 font-medium">Withdrawals</div>
+              </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+              <a data-ref data-track="hero-main" href="https://pocket-friends.co/r/xte1qtcfbf" class="btn-gradient w-full sm:w-auto px-8 py-4 rounded-2xl text-base font-bold text-center shadow-glow-lime flex items-center justify-center gap-3 group">
+                <span>Register Now & Get Bonus</span>
+                <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+              <a data-ref data-track="hero-demo" href="https://pocket-friends.co/r/xte1qtcfbf" class="w-full sm:w-auto px-8 py-4 rounded-2xl glass-card text-base font-bold text-center text-white hover:bg-brand-navy transition-colors border border-brand-border/60">
+                Try Free $10,000 Demo
+              </a>
+            </div>
+
+            <p class="text-xs text-gray-400">
+              ⚡ Instant access. No credit card required for demo registration.
+            </p>
+          </div>
+
+          <!-- Right Column: Phone Mockup Video Showcase -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative w-full max-w-[320px] sm:max-w-[340px]">
+              
+              <div class="absolute -inset-1.5 bg-gradient-to-b from-brand-cyan via-brand-accent to-brand-lime rounded-[48px] blur-lg opacity-60 animate-pulse"></div>
+
+              <div class="relative bg-brand-dark border-4 border-slate-700/80 rounded-[44px] p-2.5 shadow-phone overflow-hidden">
+                
+                <div class="absolute top-4 left-1/2 -translate-x-1/2 w-28 h-4 bg-slate-900 rounded-full z-30 flex items-center justify-center">
+                  <div class="w-10 h-1 bg-slate-700 rounded-full"></div>
+                </div>
+
+                <div class="relative w-full aspect-[9/19.5] rounded-[36px] overflow-hidden bg-black flex items-center justify-center">
+                  <video id="promoVideo" class="w-full h-full object-cover" autoplay loop muted playsinline poster="poster.jpg">
+                    <source src="Pocket_Option_English.mp4" type="video/mp4">
+                    Your browser does not support video playback.
+                  </video>
+
+                  <button id="videoToggleBtn" type="button" class="absolute bottom-5 right-4 z-20 px-3 py-1.5 rounded-full bg-brand-dark/80 backdrop-blur-md border border-white/20 text-xs text-white font-semibold flex items-center gap-1.5 shadow-lg hover:bg-black transition-all">
+                    <svg id="speakerIcon" class="w-3.5 h-3.5 text-brand-lime" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+                    <span id="videoBtnText">Unmute</span>
+                  </button>
+                  
+                  <div class="absolute top-8 left-0 right-0 z-20 flex justify-center pointer-events-none">
+                    <span class="px-3 py-1 rounded-full bg-brand-dark/70 backdrop-blur-sm text-[10px] font-bold text-brand-cyan tracking-wider border border-brand-cyan/30">
+                      LIVE PLATFORM DEMO
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TRADING ASSETS & YIELD CARDS -->
+    <section id="assets" class="py-16 bg-brand-navy/40 border-y border-brand-border/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mb-4">
+            Trade Top Global Markets
+          </h2>
+          <p class="text-gray-300 text-base sm:text-lg">
+            Access over 100+ global assets with fast execution speeds and high profit margins.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="glass-card rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-bold px-2.5 py-1 rounded-lg bg-brand-cyan/10 text-brand-cyan border border-brand-cyan/20">High Yield</span>
+                <span class="text-xs text-gray-400 font-semibold">24/7 Trading</span>
+              </div>
+              <h3 class="font-heading text-xl font-bold text-white mb-1">Currency Pairs (Forex)</h3>
+              <p class="text-sm text-gray-300 mb-4">EUR/USD, GBP/USD, USD/JPY & more with up to 92% profit payout.</p>
+            </div>
+            <div class="pt-4 border-t border-white/5 flex items-center justify-between">
+              <span class="text-xs text-gray-400">Max Return</span>
+              <span class="text-lg font-bold text-brand-lime">92%</span>
+            </div>
+          </div>
+
+          <div class="glass-card rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-bold px-2.5 py-1 rounded-lg bg-brand-emerald/10 text-brand-emerald border border-brand-emerald/20">Popular</span>
+                <span class="text-xs text-gray-400 font-semibold">Instant Execution</span>
+              </div>
+              <h3 class="font-heading text-xl font-bold text-white mb-1">Cryptocurrencies</h3>
+              <p class="text-sm text-gray-300 mb-4">Bitcoin, Ethereum, Ripple, Solana with low entry threshold.</p>
+            </div>
+            <div class="pt-4 border-t border-white/5 flex items-center justify-between">
+              <span class="text-xs text-gray-400">Max Return</span>
+              <span class="text-lg font-bold text-brand-emerald">90%</span>
+            </div>
+          </div>
+
+          <div class="glass-card rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-bold px-2.5 py-1 rounded-lg bg-yellow-400/10 text-yellow-400 border border-yellow-400/20">Commodities</span>
+                <span class="text-xs text-gray-400 font-semibold">Stable Trends</span>
+              </div>
+              <h3 class="font-heading text-xl font-bold text-white mb-1">Gold & Oil</h3>
+              <p class="text-sm text-gray-300 mb-4">Spot Gold (XAU), Silver, UKBrent, and WTI Crude Oil markets.</p>
+            </div>
+            <div class="pt-4 border-t border-white/5 flex items-center justify-between">
+              <span class="text-xs text-gray-400">Max Return</span>
+              <span class="text-lg font-bold text-yellow-400">88%</span>
+            </div>
+          </div>
+
+          <div class="glass-card rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-bold px-2.5 py-1 rounded-lg bg-purple-400/10 text-purple-400 border border-purple-400/20">Stocks & Indices</span>
+                <span class="text-xs text-gray-400 font-semibold">Global Equities</span>
+              </div>
+              <h3 class="font-heading text-xl font-bold text-white mb-1">Stocks & Indices</h3>
+              <p class="text-sm text-gray-300 mb-4">Apple, Tesla, S&P 500, NASDAQ, and major world indices.</p>
+            </div>
+            <div class="pt-4 border-t border-white/5 flex items-center justify-between">
+              <span class="text-xs text-gray-400">Max Return</span>
+              <span class="text-lg font-bold text-purple-400">85%</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-12 text-center">
+          <a data-ref data-track="assets-cta" href="https://pocket-friends.co/r/xte1qtcfbf" class="btn-gradient inline-flex items-center gap-2 px-8 py-3.5 rounded-xl font-bold text-sm shadow-glow-lime">
+            <span>Explore All 100+ Trading Assets</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LIVE INTERACTIVE CANVAS CHART WIDGET -->
+    <section id="live-demo" class="py-20 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-5 space-y-6">
+            <span class="text-xs font-bold tracking-widest text-brand-lime uppercase">Interactive Simulator</span>
+            <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+              Test Real-Time Execution Speeds
+            </h2>
+            <p class="text-gray-300 leading-relaxed">
+              Experience the ultra-fast execution engine of Pocket Option directly in your browser. Predict whether market price will go higher or lower within seconds.
+            </p>
+
+            <ul class="space-y-3 text-sm text-gray-300">
+              <li class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-brand-lime flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Payout calculation up to 92% per winning forecast</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-brand-lime flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Flexible timeframes from 5 seconds to hours</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-brand-lime flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Zero commission on deposit & withdrawal methods</span>
+              </li>
+            </ul>
+
+            <div class="pt-2">
+              <a data-ref data-track="chart-cta" href="https://pocket-friends.co/r/xte1qtcfbf" class="btn-gradient inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-sm font-bold shadow-glow-lime">
+                <span>Start Trading Real Account</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <div class="glass-card rounded-3xl p-4 sm:p-6 border border-brand-border/60 shadow-2xl relative overflow-hidden">
+              
+              <div class="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-white/10 mb-4">
+                <div class="flex items-center space-x-3">
+                  <select id="assetSelect" class="bg-brand-dark border border-brand-border/80 text-white text-xs sm:text-sm font-bold rounded-lg px-3 py-1.5 focus:outline-none focus:border-brand-cyan">
+                    <option value="EUR/USD">EUR/USD (OTC) — 92%</option>
+                    <option value="BTC/USD">BTC/USD — 88%</option>
+                    <option value="GOLD">XAU/USD (Gold) — 90%</option>
+                  </select>
+                  <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-brand-emerald/20 text-brand-emerald">
+                    LIVE FEED
+                  </span>
+                </div>
+                <div class="text-right">
+                  <div class="text-[10px] text-gray-400 uppercase tracking-wider font-semibold">Demo Balance</div>
+                  <div id="simBalance" class="text-base sm:text-lg font-extrabold text-brand-lime font-heading">$10,000.00</div>
+                </div>
+              </div>
+
+              <div class="relative w-full h-[260px] sm:h-[300px] bg-brand-dark/90 rounded-xl overflow-hidden border border-white/5">
+                <canvas id="tradingChart" class="w-full h-full block"></canvas>
+                
+                <div id="chartPriceTag" class="absolute right-3 top-4 px-2.5 py-1 rounded-md bg-brand-accent/80 text-white font-mono text-xs font-bold shadow-lg transition-all duration-150">
+                  1.08450
+                </div>
+              </div>
+
+              <div class="mt-4 grid grid-cols-2 gap-4">
+                <button id="btnHigher" class="py-3.5 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-sm sm:text-base transition-transform active:scale-95 flex items-center justify-center gap-2 shadow-lg">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"/></svg>
+                  <span>HIGHER (+92%)</span>
+                </button>
+
+                <button id="btnLower" class="py-3.5 px-4 rounded-xl bg-rose-500 hover:bg-rose-400 text-white font-extrabold text-sm sm:text-base transition-transform active:scale-95 flex items-center justify-center gap-2 shadow-lg">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+                  <span>LOWER (+92%)</span>
+                </button>
+              </div>
+
+              <div id="simToast" class="mt-3 text-center text-xs font-semibold text-gray-400 min-h-[18px]">
+                Click HIGHER or LOWER to simulate a 3-second trade.
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- HOW TO START SECTION -->
+    <section id="steps" class="py-20 bg-brand-navy/30 border-t border-brand-border/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold tracking-widest text-brand-cyan uppercase">Quick Onboarding</span>
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mt-2">
+            How to Start Trading in 3 Easy Steps
+          </h2>
+          <p class="text-gray-300 mt-3 text-base">
+            Get your trading account ready in less than 2 minutes.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <div class="glass-card rounded-3xl p-8 relative flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-brand-cyan/20 border border-brand-cyan/40 text-brand-cyan flex items-center justify-center font-heading font-extrabold text-2xl mb-6">
+                01
+              </div>
+              <h3 class="font-heading text-xl font-bold text-white mb-3">Quick Registration</h3>
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Click the registration link, enter your email and set a secure password. No complex paperwork required to begin.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-white/5 text-xs text-brand-cyan font-semibold flex items-center gap-1">
+              <span>Takes 30 seconds</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <div class="glass-card rounded-3xl p-8 relative flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-brand-lime/20 border border-brand-lime/40 text-brand-lime flex items-center justify-center font-heading font-extrabold text-2xl mb-6">
+                02
+              </div>
+              <h3 class="font-heading text-xl font-bold text-white mb-3">Practice on Demo</h3>
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Use your complimentary $10,000 demo account to test strategies, explore indicators, and build confidence risk-free.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-white/5 text-xs text-brand-lime font-semibold flex items-center gap-1">
+              <span>Refillable balance</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <div class="glass-card rounded-3xl p-8 relative flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-brand-emerald/20 border border-brand-emerald/40 text-brand-emerald flex items-center justify-center font-heading font-extrabold text-2xl mb-6">
+                03
+              </div>
+              <h3 class="font-heading text-xl font-bold text-white mb-3">Start Live Trading</h3>
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Deposit via local African mobile money, crypto, or card. Execute trades and withdraw your profits fast and conveniently.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-white/5 text-xs text-brand-emerald font-semibold flex items-center gap-1">
+              <span>Fast payouts</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-14 text-center">
+          <a data-ref data-track="steps-cta" href="https://pocket-friends.co/r/xte1qtcfbf" class="btn-gradient inline-flex items-center gap-3 px-10 py-4 rounded-2xl font-extrabold text-base shadow-glow-lime">
+            <span>Proceed to Account Registration</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TRUST & ADVANTAGES BANNER -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="glass-card rounded-3xl p-8 sm:p-12 border border-brand-border/60 relative overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-8 space-y-4">
+              <h3 class="font-heading text-2xl sm:text-3xl font-extrabold text-white">
+                Ready to join thousands of active traders across Africa?
+              </h3>
+              <p class="text-gray-300 text-sm sm:text-base">
+                Join Pocket Option today and experience high liquidity, low minimum deposit, social trading features, and 24/7 client support.
+              </p>
+            </div>
+
+            <div class="lg:col-span-4 flex justify-start lg:justify-end">
+              <a data-ref data-track="banner-cta" href="https://pocket-friends.co/r/xte1qtcfbf" class="btn-gradient w-full sm:w-auto px-8 py-4 rounded-2xl text-center font-extrabold text-base shadow-glow-lime whitespace-nowrap">
+                Create Free Account
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-dark border-t border-brand-border/30 py-12 text-gray-400 text-xs leading-relaxed">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pb-6 border-b border-white/5">
+        <div class="flex items-center space-x-3">
+          <span class="font-heading font-extrabold text-lg text-white">Pocket<span class="text-brand-cyan">Option</span> Africa</span>
+        </div>
+        <div class="text-center sm:text-right text-gray-400">
+          Official Partner Landing Page &bull; Regional Access
+        </div>
+      </div>
+
+      <p>
+        <strong>Risk Warning:</strong> Trading financial instruments including foreign exchange, digital contracts, and commodities involves substantial risk and can result in the loss of your invested capital. You should not invest money that you cannot afford to lose. Before trading, please ensure you fully understand the risks involved and consider your level of experience.
+      </p>
+
+      <p class="text-[11px] text-gray-400">
+        "Up to 92%" represents the maximum potential return on successful trades for selected assets under optimal market conditions. It does not constitute a guaranteed profit or fixed yield.
+      </p>
+
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-gray-400">
+        <div>&copy; 2026 Pocket Option Africa Partner. All rights reserved.</div>
+        <div class="flex space-x-6">
+          <a data-ref data-track="footer-terms" href="https://pocket-friends.co/r/xte1qtcfbf" class="hover:text-white transition-colors">Terms of Service</a>
+          <a data-ref data-track="footer-privacy" href="https://pocket-friends.co/r/xte1qtcfbf" class="hover:text-white transition-colors">Privacy Policy</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- STICKY MOBILE CTA BAR -->
+  <div class="sm:hidden fixed bottom-0 left-0 right-0 z-50 p-3 bg-brand-dark/95 border-t border-brand-border/60 backdrop-blur-lg">
+    <a data-ref data-track="sticky-mobile" href="https://pocket-friends.co/r/xte1qtcfbf" class="btn-gradient w-full py-3.5 rounded-xl font-extrabold text-sm text-center block shadow-glow-lime">
+      Open Account & Trade Now 🚀
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
