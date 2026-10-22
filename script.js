@@ -1,6 +1,6 @@
 // ===== Referral Link Controller =====
 const CONFIG = {
-  refLink: "https://pocket-friends.co/r/xte1qtcfbf"
+  refLink: "https://po-ru4.click/login?social=Google&utm_campaign=869330&utm_source=affiliate&utm_medium=sr&a=ll42uJOj45hlWG&al=1804873&ac=googl&cid=986843&code=WELCOME50"
 };
 
 document.addEventListener("DOMContentLoaded", () => {
